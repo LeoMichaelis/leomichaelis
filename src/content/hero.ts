@@ -2,23 +2,16 @@ export const heroContent = {
   eyebrow: "Ingénierie logicielle · Solutions sur mesure",
   signature: {
     line1: {
-      before: "Votre",
-      vision: {
-        before: "visi",
-        eye: "o",
-        after: "n",
-      },
-      punctuation: ",",
+      before: "De l'",
+      focus: "idée",
     },
     line2: {
-      before: "toute son",
-      focus: "AMPLEUR",
-      punctuation: ".",
+      before: "au",
+      focus: "produit",
     },
     line3: {
-      before: "Et même un peu",
-      focus: "plus",
-      punctuation: "...",
+      before: "Taillé pour vos",
+      focus: "besoins",
     },
   },
   description: [
