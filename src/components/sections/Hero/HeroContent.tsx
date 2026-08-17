@@ -6,7 +6,7 @@ import { HeroSignature } from "./HeroSignature";
 export function HeroContent() {
   return (
     <div className="pointer-events-none absolute top-[40px] z-30 w-[840px]">
-      <div className="mb-10 flex items-center gap-3 text-[#7e22ce]">
+      <div className="mb-12 flex items-center gap-3 text-[#7e22ce]">
         <span className="relative flex size-7 items-center justify-center">
           <span aria-hidden="true" className="absolute inset-0 rotate-45 border border-[#7e22ce]/28" />
           <Sparkles size={13} strokeWidth={1.8} />
@@ -17,7 +17,7 @@ export function HeroContent() {
 
       <HeroSignature />
 
-      <div className="mt-10 flex w-[715px] items-start gap-5">
+      <div className="mt-14 flex w-[715px] items-start gap-5">
         <span aria-hidden="true" className="mt-1 h-[54px] w-px shrink-0 bg-gradient-to-b from-[#7e22ce]/70 via-[#9333ea]/25 to-transparent" />
         <p className="text-[15.5px] leading-[1.72] tracking-[-0.005em] text-black/54">
           <span className="block whitespace-nowrap">{heroContent.description[0]}</span>

@@ -352,17 +352,6 @@ export function HeroVisual() {
           </div>
         </div>
       </div>
-
-
-
-
-      {/* Projection lumineuse */}
-      <div className="absolute bottom-[47px] left-[196px] z-[13] h-[24px] w-[420px] rounded-full bg-[#9333ea]/13 blur-[17px]" />
-      <div className="absolute bottom-[59px] left-[290px] z-[13] h-[5px] w-[240px] rounded-full bg-[#c084fc]/11 blur-[7px]" />
-
-      {/* Repères */}
-      <div className="absolute right-[7px] top-[30px] size-2 rotate-45 bg-[#9333ea]/45 shadow-[0_0_10px_rgba(147,51,234,0.36)]" />
-      <div className="absolute bottom-[32px] left-[47%] size-2 rounded-full bg-[#a855f7]/42 shadow-[0_0_12px_rgba(168,85,247,0.42)]" />
     </div>
   );
 }

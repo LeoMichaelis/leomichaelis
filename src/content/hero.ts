@@ -10,7 +10,7 @@ export const heroContent = {
       focus: "produit",
     },
     line3: {
-      before: "Taillé pour vos",
+      before: "selon vos",
       focus: "besoins",
     },
   },

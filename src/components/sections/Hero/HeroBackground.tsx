@@ -47,12 +47,12 @@ export function HeroBackground() {
         </div>
       </div>
 
-      {/* PRODUCT
-      <div className="absolute left-[48%] top-[40%] h-[108px] w-[475px] -rotate-[7deg] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_9%,black_86%,transparent_100%)]">
+      {/* PRODUCT */}
+      <div className="absolute left-[46%] top-[26%] h-[108px] w-[475px] -rotate-[7deg] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_9%,black_86%,transparent_100%)]">
         <span className="absolute whitespace-nowrap font-[family-name:var(--font-header)] text-[92px] font-black leading-none tracking-[-0.07em] text-[#6b21a8]/[0.11] blur-[0.55px]">{product}</span>
         <span className="absolute left-[4px] top-[4px] whitespace-nowrap font-[family-name:var(--font-header)] text-[92px] font-black leading-none tracking-[-0.07em] text-transparent [-webkit-text-stroke:1px_rgba(126,34,206,0.18)]">{product}</span>
         <span className="absolute bottom-[13px] left-[13%] h-px w-[72%] bg-gradient-to-r from-transparent via-[#9333ea]/42 to-transparent" />
-      </div> */}
+      </div> 
 
 
       {/* SYSTEMS
