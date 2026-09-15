@@ -1,88 +1,57 @@
 import { heroContent } from "@/content/hero";
 
 export function HeroBackground() {
-  const { software, architecture, data, product, systems } = heroContent.keywords;
+  const { data, product } = heroContent.keywords;
 
   return (
-    <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+    <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden [container-type:inline-size] [--u:clamp(.75px,calc(100cqw/1600),1.1px)]">
+      {/* BACKGROUND */}
       {/* Base minérale */}
-      <div className="absolute inset-0 bg-[linear-gradient(116deg,#cec7d2_0%,#e2dce4_30%,#ddd5e1_57%,#c7bdce_100%)]" />
-
-      {/* Modelé lumineux gauche / centre */}
-      <div className="absolute left-[17%] top-[-230px] h-[540px] w-[760px] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.68)_0%,rgba(249,246,250,0.38)_35%,rgba(240,228,248,0.16)_52%,transparent_74%)] blur-[58px]" />
-      <div className="absolute left-[36%] top-[17%] h-[390px] w-[560px] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.31)_0%,rgba(233,213,246,0.13)_44%,transparent_72%)] blur-[65px]" />
-
-      {/* Lumières latérales */}
-      <div className="opacity-50 absolute -left-44 top-[20%] size-[610px] rounded-full bg-[radial-gradient(circle,rgba(216,180,254,0.28)_0%,rgba(168,85,247,0.085)_42%,transparent_72%)] blur-[68px]" />
-      <div className="absolute right-[-175px] top-[1%] size-[690px] rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.21)_0%,rgba(126,34,206,0.105)_34%,rgba(99,102,241,0.035)_56%,transparent_74%)] blur-[72px]" />
-
-      {/* Lumière provenant de la workstation */}
-      <div className="absolute right-[5%] top-[21%] h-[420px] w-[610px] rounded-[50%] bg-[radial-gradient(ellipse,rgba(216,180,254,0.25)_0%,rgba(192,132,252,0.14)_27%,rgba(147,51,234,0.07)_47%,transparent_72%)] blur-[43px]" />
-      <div className="absolute right-[13%] top-[35%] h-[260px] w-[460px] rounded-[50%] bg-[radial-gradient(ellipse,rgba(232,121,249,0.12)_0%,rgba(168,85,247,0.055)_44%,transparent_73%)] blur-[35px]" />
-
-      {/* SOFTWARE 
-      <div className="absolute left-[-1.8%] top-[-1.5%] h-[126px] w-[590px] rotate-[-1.5deg] overflow-hidden [mask-image:linear-gradient(90deg,rgba(0,0,0,0.72)_0%,black_8%,black_82%,transparent_100%)]">
-        <span className="absolute left-0 top-0 whitespace-nowrap font-[family-name:var(--font-header)] text-[111px] font-black leading-none tracking-[-0.078em] text-[#6b21a8]/[0.085] blur-[0.7px]">{software}</span>
-        <span className="absolute left-[3px] top-[3px] whitespace-nowrap font-[family-name:var(--font-header)] text-[111px] font-black leading-none tracking-[-0.078em] text-transparent [-webkit-text-stroke:1px_rgba(91,33,182,0.20)]">{software}</span>
-      </div> */}
-
-      {/* ARCHITECTURE */}
-      <div className="absolute right-[-6.5%] top-[3%] h-[125px] w-[720px] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_12%,black_88%,transparent_100%)]">
-        <span className="absolute left-0 top-0 whitespace-nowrap font-[family-name:var(--font-header)] text-[96px] font-black leading-none tracking-[-0.066em] text-transparent [-webkit-text-stroke:1px_rgba(126,34,206,0.27)]">{architecture}</span>
-        <span className="absolute left-[52%] top-[10px] h-[82px] w-px rotate-[18deg] bg-gradient-to-b from-transparent via-[#a855f7]/45 to-transparent" />
-        <span className="absolute left-[28%] top-[35px] h-[38px] w-[310px] rounded-full bg-[#9333ea]/[0.055] blur-[18px]" />
-      </div>
-
-      {/* DATA */}
-      <div className="absolute right-[-3%] top-[27%] flex h-[232px] items-center gap-3">
-        <span className="h-full w-px bg-gradient-to-b from-transparent via-[#9333ea]/30 to-transparent" />
-        <div className="relative">
-          <span className="bg-[linear-gradient(180deg,rgba(126,34,206,0.18),rgba(168,85,247,0.08))] bg-clip-text font-[family-name:var(--font-header)] text-[56px] font-black tracking-[0.13em] text-transparent [writing-mode:vertical-rl]">{data}</span>
-          <span className="absolute left-[4px] top-[4px] font-[family-name:var(--font-header)] text-[56px] font-black tracking-[0.13em] text-transparent [-webkit-text-stroke:1px_rgba(147,51,234,0.25)] [writing-mode:vertical-rl]">{data}</span>
-        </div>
-        <div className="flex h-full flex-col justify-around">
-          <span className="size-1.5 rotate-45 bg-[#a855f7]/55" />
-          <span className="h-px w-7 bg-[#9333ea]/36" />
-          <span className="size-1 rounded-full bg-[#c084fc]/55 shadow-[0_0_10px_rgba(192,132,252,0.38)]" />
-        </div>
-      </div>
-
-      {/* PRODUCT */}
-      <div className="absolute left-[46%] top-[26%] h-[108px] w-[475px] -rotate-[7deg] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_9%,black_86%,transparent_100%)]">
-        <span className="absolute whitespace-nowrap font-[family-name:var(--font-header)] text-[92px] font-black leading-none tracking-[-0.07em] text-[#6b21a8]/[0.11] blur-[0.55px]">{product}</span>
-        <span className="absolute left-[4px] top-[4px] whitespace-nowrap font-[family-name:var(--font-header)] text-[92px] font-black leading-none tracking-[-0.07em] text-transparent [-webkit-text-stroke:1px_rgba(126,34,206,0.18)]">{product}</span>
-        <span className="absolute bottom-[13px] left-[13%] h-px w-[72%] bg-gradient-to-r from-transparent via-[#9333ea]/42 to-transparent" />
-      </div> 
-
-
-      {/* SYSTEMS
-      <div className="absolute inset-x-0 bottom-[-28px] z-[11] h-[148px] overflow-hidden">
-        <span className="absolute bottom-[-34px] left-1/2 -translate-x-1/2 whitespace-nowrap font-[family-name:var(--font-header)] text-[148px] font-black leading-none tracking-[-0.045em] text-[#6b21a8]/[0.055]">{systems}</span>
-        <span className="absolute bottom-[-31px] left-[calc(50%+3px)] -translate-x-1/2 whitespace-nowrap font-[family-name:var(--font-header)] text-[148px] font-black leading-none tracking-[-0.045em] text-transparent opacity-40 [-webkit-text-stroke:1px_rgba(107,33,168,0.20)]">{systems}</span>
-        <div className="absolute inset-0 [mask-image:linear-gradient(180deg,transparent_0%,transparent_45%,rgba(0,0,0,0.24)_58%,rgba(0,0,0,0.72)_76%,black_100%)]">
-          <span className="absolute bottom-[-34px] left-1/2 -translate-x-1/2 whitespace-nowrap font-[family-name:var(--font-header)] text-[148px] font-black leading-none tracking-[-0.045em] text-[#d8b4fe]/[0.075]">{systems}</span>
-          <span className="absolute bottom-[-31px] left-[calc(50%+3px)] -translate-x-1/2 whitespace-nowrap font-[family-name:var(--font-header)] text-[148px] font-black leading-none tracking-[-0.045em] text-transparent opacity-45 [-webkit-text-stroke:1px_rgba(216,180,254,0.30)]">{systems}</span>
-        </div>
-      </div> */}
-
-
+      <div className="absolute inset-0 bg-[linear-gradient(108deg,#d2cbd6_0%,#e1dce4_38%,#d9d1de_65%,#c8bccf_100%)]" />
+      {/* Lumière éditoriale gauche */}
+      <div className="absolute left-[-3%] top-[10%] h-[calc(430*var(--u))] w-[calc(620*var(--u))] rounded-[50%] bg-[radial-gradient(ellipse_at_60%_42%,rgba(255,248,238,0.24)_0%,rgba(250,239,230,0.13)_30%,rgba(238,221,230,0.055)_52%,transparent_74%)] blur-[calc(24*var(--u))]" />
+      {/* Nappe lilas centrale */}
+      <div className="absolute left-[28%] top-[15%] h-[calc(390*var(--u))] w-[calc(610*var(--u))] rounded-[50%] bg-[radial-gradient(ellipse,rgba(155,112,184,0.095)_0%,rgba(151,107,180,0.055)_38%,rgba(139,94,170,0.025)_58%,transparent_74%)] blur-[calc(20*var(--u))]" />
+      {/* Lueur haute workstation */}
+      <div className="absolute right-[4%] top-[-9%] h-[calc(340*var(--u))] w-[calc(680*var(--u))] rounded-[50%] bg-[radial-gradient(ellipse_at_56%_72%,rgba(225,201,240,0.26)_0%,rgba(203,166,226,0.15)_30%,rgba(171,119,204,0.065)_52%,transparent_74%)] blur-[calc(34*var(--u))]" />
+      {/* Teinte latérale droite workstation */}
+      <div className="absolute right-[calc(-175*var(--u))] top-[1%] size-[calc(690*var(--u))] rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.21)_0%,rgba(126,34,206,0.105)_34%,rgba(99,102,241,0.035)_56%,transparent_74%)] blur-[calc(72*var(--u))]" />
       {/* Grille technique workstation */}
-      <div className="absolute inset-y-0 right-0 w-[59%] opacity-[0.19] [background-image:linear-gradient(rgba(50,31,59,0.10)_1px,transparent_1px),linear-gradient(90deg,rgba(50,31,59,0.10)_1px,transparent_1px)] [background-size:39px_39px] [mask-image:linear-gradient(90deg,transparent,black_42%,black)]" />
-
+      <div className="absolute right-[-2%] top-[0.4%] h-[calc(175*var(--u))] w-[55%] opacity-[0.32] [background-image:linear-gradient(rgba(126,34,206,0.13)_1px,transparent_1px),linear-gradient(90deg,rgba(126,34,206,0.13)_1px,transparent_1px)] [background-size:calc(38*var(--u))_calc(38*var(--u))] [mask-image:linear-gradient(90deg,transparent_0%,black_18%,black_84%,transparent_100%)]" />
       {/* Horizon */}
-      <div className="absolute -bottom-[300px] right-[-13%] h-[525px] w-[79%] rotate-[-5deg] rounded-[50%] bg-[radial-gradient(ellipse_at_42%_4%,rgba(126,34,206,0.34)_0%,rgba(63,42,73,0.92)_27%,rgba(33,25,41,0.98)_54%,#17131f_78%)] shadow-[0_-34px_80px_rgba(126,34,206,0.13)]" />
-
+      <div className="absolute bottom-[calc(-320*var(--u))] right-[-13%] h-[calc(525*var(--u))] w-[79%] rotate-[-5deg] rounded-[50%] bg-[radial-gradient(ellipse_at_42%_4%,rgba(126,34,206,0.34)_0%,rgba(63,42,73,0.92)_27%,rgba(33,25,41,0.98)_54%,#17131f_78%)] shadow-[0_-34px_80px_rgba(126,34,206,0.13)]" />
       {/* Ombre venant de la workstation */}
-      <div className="absolute -bottom-[248px] left-[31%] h-[370px] w-[52%] rotate-[3deg] rounded-[50%] bg-[radial-gradient(ellipse_at_67%_0%,rgba(76,29,149,0.23)_0%,rgba(23,19,31,0.76)_56%,transparent_74%)] blur-[2px]" />
-
-      {/* Arête physique */}
-      <div className="absolute bottom-[77px] right-[3%] h-px w-[605px] -rotate-[4deg] bg-gradient-to-r from-transparent via-white/22 via-35% to-transparent" />
-      <div className="absolute bottom-[76px] right-[3%] h-px w-[605px] -rotate-[4deg] bg-gradient-to-r from-transparent via-[#c084fc]/52 to-transparent shadow-[0_1px_5px_rgba(168,85,247,0.26)]" />
-      <div className="absolute bottom-[70px] right-[17%] h-[6px] w-[390px] -rotate-[4deg] rounded-full bg-[#7e22ce]/14 blur-[8px]" />
-
-      {/* Fusion finale avec Universe */}
-      <div className="absolute inset-x-0 bottom-0 h-[86px] bg-[linear-gradient(180deg,transparent_0%,rgba(23,19,31,0.30)_32%,rgba(23,19,31,0.78)_72%,#17131f_100%)]" />
-
+      <div className="absolute bottom-[calc(-52*var(--u))] right-[15%] h-[calc(205*var(--u))] w-[48%] rotate-[3deg] rounded-[50%] bg-[radial-gradient(ellipse_at_74%_24%,rgba(18,12,24,0.52)_0%,rgba(35,21,46,0.35)_30%,rgba(68,39,84,0.18)_52%,transparent_74%)] blur-[calc(3*var(--u))]" />
+      {/* Fusion finale avec Prestations */}
+      <div className="absolute inset-x-0 bottom-0 h-[calc(57*var(--u))] bg-[linear-gradient(180deg,transparent_0%,rgba(23,19,31,0.10)_38%,rgba(23,19,31,0.52)_72%,#17131f_100%)]" />
+      {/* Arête physique — accroche lumineuse du plan */}
+      <svg className="pointer-events-none absolute bottom-[calc(55*var(--u))] right-[2%] h-[calc(92*var(--u))] w-[calc(700*var(--u))] overflow-visible" viewBox="0 0 700 92" fill="none">
+        <defs>
+          <linearGradient id="hero-edge-highlight" x1="0" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#ffffff" stopOpacity="0" />
+            <stop offset="14%" stopColor="#ffffff" stopOpacity="0.08" />
+            <stop offset="32%" stopColor="#fffaff" stopOpacity="0.30" />
+            <stop offset="49%" stopColor="#f3e8ff" stopOpacity="0.20" />
+            <stop offset="67%" stopColor="#d8b4fe" stopOpacity="0.30" />
+            <stop offset="88%" stopColor="#c084fc" stopOpacity="0.17" />
+            <stop offset="100%" stopColor="#c084fc" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="M8 66 C220 62 458 44 692 14" stroke="#a855f7" strokeOpacity="0.15" strokeWidth="1.4" />
+        <path d="M8 66 C220 62 458 44 692 14" stroke="url(#hero-edge-highlight)" strokeWidth="0.9" />
+      </svg>
+      {/* MOTS DE DÉCORATION */}
+      
+      {/* PRODUCT */}
+      <div className="absolute left-[46%] top-[42%] h-[calc(108*var(--u))] w-[calc(475*var(--u))] -rotate-[7deg] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_9%,black_86%,transparent_100%)]">
+        <span className="absolute whitespace-nowrap font-[family-name:var(--font-header)] text-[calc(92*var(--u))] font-black leading-none tracking-[-0.07em] text-[#6b21a8]/[0.11] blur-[calc(.55*var(--u))]">
+          {product}
+        </span>
+        <span className="absolute left-[calc(4*var(--u))] top-[calc(4*var(--u))] whitespace-nowrap font-[family-name:var(--font-header)] text-[calc(92*var(--u))] font-black leading-none tracking-[-0.07em] text-transparent [-webkit-text-stroke:1px_rgba(126,34,206,0.18)]">
+          {product}
+        </span>
+        <span className="absolute bottom-[calc(13*var(--u))] left-[13%] h-px w-[72%] bg-gradient-to-r from-transparent via-[#9333ea]/42 to-transparent" />
+      </div>
     </div>
   );
 }

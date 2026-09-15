@@ -8,6 +8,8 @@
   --purple-soft: #dcd3ff;
   --dark: #17131f;
   --dark-soft: #211a2d;
+
+  --page-gutter: clamp(2.5rem, 8.6vw, 13rem);
 }
 
 *,

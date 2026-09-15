@@ -14,7 +14,6 @@ export const siteConfig = {
     firstName: "LÉO",
     lastName: "MICHAËLIS",
     role: "Ingénieur logiciel",
-    focus: "Produits numériques",
     location: "Aix-en-Provence, France",
   },
 
