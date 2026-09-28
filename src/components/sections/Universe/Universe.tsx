@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Universe() {
   return (
     <section
-      id="mon-univers"
+      id="atelier"
       className="relative overflow-hidden bg-[#17131f] py-12 text-white sm:py-16"
     >
       <div className="absolute left-[-10%] top-[-20%] size-[520px] rounded-full bg-[#7657e8]/20 blur-[120px]" />

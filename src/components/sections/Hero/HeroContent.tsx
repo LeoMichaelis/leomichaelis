@@ -1,12 +1,12 @@
 import { ArrowDownRight, ChevronDown } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { heroContent } from "@/content/hero";
-import { HeroSignature } from "./HeroSignature";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { HeroSignature } from "./HeroSignature";
 
 export function HeroContent() {
   return (
-    <div className="pointer-events-none relative z-30  w-[clamp(30rem,38.6vw,42rem)] shrink-0">
+    <div className="pointer-events-none relative z-30 w-[clamp(30rem,38.6vw,42rem)] shrink-0">
       <Eyebrow eyebrow={heroContent.eyebrow} />
       <div className="mt-[clamp(3rem,4vw,4.5rem)]"><HeroSignature /></div>
       <div className="mt-[clamp(3rem,4vw,4.5rem)] flex items-start gap-5 text-[clamp(.875rem,1vw,1.0625rem)]">

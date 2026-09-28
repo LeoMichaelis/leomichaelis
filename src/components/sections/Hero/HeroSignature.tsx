@@ -1,8 +1,8 @@
 import Image from "next/image";
 import caliperNeeds from "@/assets/img/caliper.png";
+import { heroContent } from "@/content/hero";
 import { IdeaLampInteraction } from "./hover/IdeaLampInteraction";
 import { NeedsLevelBubble } from "./hover/NeedsLevelBubble";
-import { heroContent } from "@/content/hero";
 const u = (value: number) => `calc(${value}*var(--u))`;
 
 function IdeaSpark() {

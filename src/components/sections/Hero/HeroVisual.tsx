@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-
 import { Activity, Bot, Check, ChevronRight, Code2, Database, Folder, Globe2, Play, ScanSearch, ServerCog, Maximize2 } from "lucide-react";
 
 export function HeroVisual() {
