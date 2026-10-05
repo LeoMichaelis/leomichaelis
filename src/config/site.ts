@@ -4,7 +4,7 @@ const sections = {
   realizations: "#realisations",
   workshop: "#atelier",
   cv: "#cv",
-  project: "#votre-projet",
+  project: "#devis",
   contact: "#contact",
 } as const;
 

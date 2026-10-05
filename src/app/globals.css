@@ -60,3 +60,60 @@ img {
   0% { background-position: -35% 0, 0 0; }
   100% { background-position: 135% 0, 0 0; }
 }
+
+.prestations-main-card:has(.prestations-main-expanded-hit:hover) {
+  border-color: rgba(255,255,255,.16);
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0,.22), 0 0 0 1px rgba(216,180,254,.07), 0 0 1.35rem rgba(168,85,247,.045), inset 0 1px 0 rgba(255,255,255,.075), inset 0 -1px 0 rgba(168,85,247,.07);
+}
+
+.prestations-main-card:has(.prestations-main-expanded-hit:hover) .prestations-title-shimmer {
+  animation: prestations-title-shimmer-reverse 900ms linear 1;
+}
+
+.prestations-main-card:has(.prestations-main-expanded-hit:hover) .prestations-main-chevron-box {
+  width: clamp(3.1rem,3.35vw,3.4rem);
+  height: clamp(2.25rem,2.45vw,2.5rem);
+  transform: translateY(2px);
+  border-color: rgba(255,255,255,.14);
+  background-color: rgba(255,255,255,.065);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.075), 0 .45rem 1.25rem rgba(0,0,0,.15);
+}
+
+.prestations-main-card:has(.prestations-main-expanded-hit:hover) .prestations-main-chevron-icon {
+  width: clamp(1.15rem,1.25vw,1.3rem);
+  height: clamp(1.15rem,1.25vw,1.3rem);
+  color: rgba(255,255,255,.9);
+}
+
+@keyframes prestations-title-shimmer-reverse {
+  0% { background-position: 135% 0, 0 0; }
+  100% { background-position: -35% 0, 0 0; }
+}
+
+.prestations-secondary-card:has(.prestations-secondary-expanded-hit:hover),
+.prestations-secondary-card:has(.prestations-secondary-chevron:hover) {
+  border-color: rgba(255,255,255,.16);
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0,.20), 0 0 0 1px rgba(216,180,254,.06), 0 0 1.2rem rgba(168,85,247,.035), inset 0 1px 0 rgba(255,255,255,.07), inset 0 -1px 0 rgba(168,85,247,.06);
+}
+
+.prestations-secondary-card:has(.prestations-secondary-expanded-hit:hover) .prestations-title-shimmer,
+.prestations-secondary-card[data-expanded="true"]:has(.prestations-secondary-chevron:hover) .prestations-title-shimmer {
+  animation: prestations-title-shimmer-reverse 900ms linear 1;
+}
+
+.prestations-secondary-card:has(.prestations-secondary-expanded-hit:hover) .prestations-secondary-chevron-box,
+.prestations-secondary-card:has(.prestations-secondary-chevron:hover) .prestations-secondary-chevron-box {
+  width: clamp(3.1rem,3.35vw,3.4rem);
+  height: clamp(2.25rem,2.45vw,2.5rem);
+  transform: translateY(2px);
+  border-color: rgba(255,255,255,.14);
+  background-color: rgba(255,255,255,.065);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.075), 0 .45rem 1.25rem rgba(0,0,0,.15);
+}
+
+.prestations-secondary-card:has(.prestations-secondary-expanded-hit:hover) .prestations-secondary-chevron-icon,
+.prestations-secondary-card:has(.prestations-secondary-chevron:hover) .prestations-secondary-chevron-icon {
+  width: clamp(1.15rem,1.25vw,1.3rem);
+  height: clamp(1.15rem,1.25vw,1.3rem);
+  color: rgba(255,255,255,.9);
+}
