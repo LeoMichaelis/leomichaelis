@@ -1,6 +1,6 @@
 export function PrestationsBackground() {
   return (
-    <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+    <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden" style={{WebkitMaskImage: `linear-gradient(#000 0 0), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath fill='white' fill-rule='evenodd' d='M0 0H100V100H0Z M-20 100a70 76 0 1 0 140 0a70 76 0 1 0-140 0Z'/%3E%3C/svg%3E")`, WebkitMaskSize: "100% calc(100% - var(--section-transition-space) + 1px), 100% var(--section-transition-space)", WebkitMaskPosition: "top, bottom", WebkitMaskRepeat: "no-repeat", maskImage: `linear-gradient(#000 0 0), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath fill='white' fill-rule='evenodd' d='M0 0H100V100H0Z M-20 100a70 76 0 1 0 140 0a70 76 0 1 0-140 0Z'/%3E%3C/svg%3E")`, maskSize: "100% calc(100% - var(--section-transition-space) + 1px), 100% var(--section-transition-space)", maskPosition: "top, bottom", maskRepeat: "no-repeat"}}>
       {/* Base graphite / aubergine */}
       <div className="absolute inset-0 bg-[linear-gradient(118deg,#131116_0%,#17111d_34%,#120f16_68%,#18101f_100%)]" />
 
@@ -13,9 +13,9 @@ export function PrestationsBackground() {
 
       {/* Architecture discrète */}
       <div className="absolute inset-y-0 right-0 w-[44%] opacity-[0.10] [background-image:linear-gradient(rgba(216,180,254,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(216,180,254,0.16)_1px,transparent_1px)] [background-size:38px_38px] [mask-image:linear-gradient(to_left,black,transparent_82%)]" />
-      <div className="absolute -left-[330px] bottom-[-430px] size-[760px] rounded-full border border-[#c084fc]/[0.075]" />
-      <div className="absolute -left-[220px] bottom-[-325px] size-[560px] rounded-full border border-white/[0.035]" />
-      <div className="absolute -right-[250px] top-[-360px] size-[720px] rounded-full border border-[#818cf8]/[0.065]" />
+      <div className="absolute -left-[330px] bottom-[-430px] size-[760px] rounded-full border border-[#c084fc]/[0.1]" />
+      <div className="absolute -left-[220px] bottom-[-325px] size-[560px] rounded-full border border-white/[0.08]" />
+      <div className="absolute -right-[250px] top-[-360px] size-[720px] rounded-full border border-[#818cf8]/[0.09]" />
 
       {/* Micro-géométries */}
       <div className="absolute left-[4%] top-[clamp(8rem,10vw,12rem)] size-2 rotate-45 border border-[#d8b4fe]/30 bg-[#a855f7]/[0.04]" />
