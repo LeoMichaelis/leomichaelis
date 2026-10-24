@@ -40,7 +40,7 @@ export function PrestationsMainCard({ expanded, onToggle }: { expanded: boolean;
 
       <div role={!expanded ? "button" : undefined} tabIndex={!expanded ? 0 : undefined} aria-expanded={!expanded ? false : undefined} aria-controls={!expanded ?"main-prestation-expanded" : undefined} aria-label={!expanded ? `Déplier ${main.title}` : undefined} onClick={!expanded ? onToggle : undefined} onKeyDown={!expanded ? handleKeyDown : undefined} className={`relative z-10 flex w-full items-stretch focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-[#c084fc]/35 ${expanded ? "" : "cursor-pointer"}`}>
         <div className="flex shrink-0 flex-col justify-between px-[clamp(1.75rem,2.6vw,3rem)] pt-[clamp(1.6rem,2.15vw,2.4rem)] pb-[clamp(3.6rem,4.2vw,4.5rem)]">
-          <h3 className="prestations-title-shimmer whitespace-nowrap font-[family-name:var(--font-main)] text-[clamp(2rem,2.5vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]">{main.title}</h3>
+          <h3 className="prestations-title-shimmer whitespace-nowrap text-[clamp(2rem,2.5vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]">{main.title}</h3>
           <p className="pt-[clamp(1.9rem,2.45vw,2.7rem)] text-[clamp(.95rem,1.02vw,1.075rem)] font-normal leading-[1.6] tracking-[-0.01em] text-white/50">{main.shortDescription.line1}<br />{main.shortDescription.line2}</p>
         </div>
 
@@ -156,7 +156,7 @@ function PrestationsSecondaryCard({ cardId, content, illustration, expanded, onT
 
       <div role={!expanded ? "button" : undefined} tabIndex={!expanded ? 0 : undefined} aria-expanded={!expanded ? false : undefined} aria-controls={!expanded ? `${cardId}-prestation-expanded` : undefined} aria-label={!expanded ? `Déplier ${content.title}` : undefined} onClick={!expanded ? onToggle : undefined} onKeyDown={!expanded ? handleKeyDown : undefined} className={`relative z-10 flex w-full flex-col px-[clamp(1.4rem,1.7vw,1.8rem)] pt-[clamp(1.35rem,1.6vw,1.7rem)] ${expanded ? "pb-[clamp(.8rem,1vw,1.05rem)]" : "pb-[clamp(.4rem,.55vw,.55rem)]"} focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-[#c084fc]/35 ${expanded ? "" : "cursor-pointer"}`}>
         <div className="h-[clamp(7rem,9vw,9.5rem)] w-full">{illustration}</div>
-        <h3 className="prestations-title-shimmer mt-[clamp(1rem,1.2vw,1.3rem)] text-center font-[family-name:var(--font-main)] text-[clamp(1.25rem,1.45vw,1.55rem)] font-bold leading-[1.08] tracking-[-0.025em]">{content.title}</h3>
+        <h3 className="prestations-title-shimmer mt-[clamp(1rem,1.2vw,1.3rem)] text-center text-[clamp(1.25rem,1.45vw,1.55rem)] font-bold leading-[1.08] tracking-[-0.025em]">{content.title}</h3>
         <div aria-hidden="true" className={`w-[clamp(3.1rem,3.35vw,3.4rem)] shrink-0 self-center transition-[height,margin-top] duration-[480ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${expanded ? "mt-0 h-0" : "mt-[clamp(1rem,1.15vw,1.2rem)] h-[clamp(2.25rem,2.45vw,2.5rem)]"}`} />
       </div>
 

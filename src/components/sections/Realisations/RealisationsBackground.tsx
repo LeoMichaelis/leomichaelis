@@ -1,19 +1,6 @@
 export function RealisationsBackground() {
   return (
-    <div
-      aria-hidden="true"
-      className="pointer-events-none absolute inset-0 overflow-hidden [container-type:inline-size] [--u:clamp(.78px,calc(100cqw/1600),1.08px)]"
-      style={{
-        WebkitMaskImage: `linear-gradient(#000 0 0), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath fill='white' d='M-20 0a70 76 0 1 1 140 0a70 76 0 1 1-140 0Z'/%3E%3C/svg%3E")`,
-        WebkitMaskSize: "100% calc(100% - var(--section-transition-space) + 1px), 100% var(--section-transition-space)",
-        WebkitMaskPosition: "top, bottom",
-        WebkitMaskRepeat: "no-repeat",
-        maskImage: `linear-gradient(#000 0 0), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath fill='white' d='M-20 0a70 76 0 1 1 140 0a70 76 0 1 1-140 0Z'/%3E%3C/svg%3E")`,
-        maskSize: "100% calc(100% - var(--section-transition-space) + 1px), 100% var(--section-transition-space)",
-        maskPosition: "top, bottom",
-        maskRepeat: "no-repeat",
-      }}
-    >
+    <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden [container-type:inline-size] [--u:clamp(.78px,calc(100cqw/1600),1.08px)]" style={{ WebkitMaskImage: `linear-gradient(#000 0 0), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath fill='white' d='M-20 0a70 76 0 1 1 140 0a70 76 0 1 1-140 0Z'/%3E%3C/svg%3E")`, WebkitMaskSize: "100% calc(100% - var(--section-transition-space) + 1px), 100% var(--section-transition-space)", WebkitMaskPosition: "top, bottom", WebkitMaskRepeat: "no-repeat", maskImage: `linear-gradient(#000 0 0), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath fill='white' d='M-20 0a70 76 0 1 1 140 0a70 76 0 1 1-140 0Z'/%3E%3C/svg%3E")`, maskSize: "100% calc(100% - var(--section-transition-space) + 1px), 100% var(--section-transition-space)", maskPosition: "top, bottom", maskRepeat: "no-repeat" }}>
       {/* Base minérale lilas */}
       <div className="absolute inset-0 bg-[linear-gradient(116deg,#e9e3ec_0%,#eee8ef_29%,#ebe4ee_57%,#e5dfeb_82%,#e1daea_100%)]" />
 

@@ -87,20 +87,20 @@ function AideOParieursIllustration() {
         <g filter="url(#aop-v2-shadow)">
           <rect x="144" y="28" width="67" height="27" rx="7" fill="url(#aop-v2-glass-edge)" />
           <rect x="145" y="29" width="65" height="25" rx="6.2" fill="url(#aop-v2-glass)" />
-          <text x="152" y="35" fill="#e8dce9" opacity=".48" fontSize="5" fontWeight="700" letterSpacing=".75" fontFamily="var(--font-main)">VALUE</text>
-          <text x="152" y="49" fill="url(#aop-v2-magenta)" fontSize="11.5" fontWeight="800" fontFamily="var(--font-main)">+4.8%</text>
+          <text x="152" y="35" fill="#e8dce9" opacity=".48" fontSize="5" fontWeight="700" letterSpacing=".75">VALUE</text>
+          <text x="152" y="49" fill="url(#aop-v2-magenta)" fontSize="11.5" fontWeight="800">+4.8%</text>
         </g>
 
         {/* Cotes */}
         <g filter="url(#aop-v2-shadow)">
           <rect x="133" y="84" width="28" height="17" rx="5" fill="#211923" stroke="#9d6ba1" strokeWidth=".8" />
-          <text x="147" y="95" textAnchor="middle" fill="#f1d9ee" fontSize="7.2" fontWeight="700" fontFamily="var(--font-main)">1.44</text>
+          <text x="147" y="95" textAnchor="middle" fill="#f1d9ee" fontSize="7.2" fontWeight="700">1.44</text>
 
           <rect x="169" y="88" width="28" height="17" rx="5" fill="#211923" stroke="#83578d" strokeWidth=".8" />
-          <text x="183" y="99" textAnchor="middle" fill="#dca8d6" fontSize="7.2" fontWeight="700" fontFamily="var(--font-main)">5.30</text>
+          <text x="183" y="99" textAnchor="middle" fill="#dca8d6" fontSize="7.2" fontWeight="700" >5.30</text>
 
           <rect x="205" y="83" width="28" height="17" rx="5" fill="#211923" stroke="#a35a9a" strokeWidth=".8" />
-          <text x="219" y="94.3" textAnchor="middle" fill="#f09edc" fontSize="7.2" fontWeight="700" fontFamily="var(--font-main)">6.95</text>
+          <text x="219" y="94.3" textAnchor="middle" fill="#f09edc" fontSize="7.2" fontWeight="700">6.95</text>
         </g>
 
         {/* Capsule communautaire */}

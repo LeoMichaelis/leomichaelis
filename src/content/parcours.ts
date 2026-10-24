@@ -1,5 +1,3 @@
-import type { ParcoursItem } from "@/types/parcours";
-
 export const parcoursContent = {
   eyebrow: "Parcours",
   title: {
@@ -92,4 +90,4 @@ export const parcoursItems = [
     technologies: ["Mathématiques", "Physique", "Informatique"],
     accent: "indigo",
   },
-] satisfies ParcoursItem[];
+] as const;

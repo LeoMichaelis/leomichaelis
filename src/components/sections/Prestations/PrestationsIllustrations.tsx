@@ -38,7 +38,7 @@ function BetaDesktop() {
           <div className="flex h-[calc(30*var(--u))] shrink-0 items-center border-b border-[#142126]/[0.07] bg-white px-[calc(10*var(--u))]">
             <div className="flex items-center gap-[calc(5*var(--u))]">
               <BetaMark className="size-[calc(14*var(--u))]" />
-              <span className="font-[family-name:var(--font-main)] text-[calc(8.6*var(--u))] font-black tracking-[0.055em] text-[#142126]">BETA</span>
+              <span className="text-[calc(8.6*var(--u))] font-black tracking-[0.055em] text-[#142126]">BETA</span>
             </div>
 
             <div className="mx-auto flex items-center gap-[calc(3.5*var(--u))]">

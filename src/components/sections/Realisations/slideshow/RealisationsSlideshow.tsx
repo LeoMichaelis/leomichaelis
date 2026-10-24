@@ -325,7 +325,7 @@ function RealisationsCard({ project, active = false }: { project: Project; activ
                   {project.period.map((year, index) => (
                     <span key={year} className="flex items-center">
                       {index > 0 && <span className="mx-[3px] h-[1px] w-[min(clamp(.35rem,.45vw,.45rem),1.86cqw)] shrink-0 rounded-full bg-[#dcaee9]/65 shadow-[0_0_4px_rgba(216,159,233,0.16)]" />}
-                      <span className="whitespace-nowrap font-main text-[min(clamp(.58rem,.64vw,.64rem),2.85cqw)] font-medium tracking-[0.09em] text-[#eee4f1]/[0.66]">{year}</span>
+                      <span className="whitespace-nowrap text-[min(clamp(.58rem,.64vw,.64rem),2.85cqw)] font-medium tracking-[0.09em] text-[#eee4f1]/[0.66]">{year}</span>
                     </span>
                   ))}
                 </div>
@@ -333,7 +333,7 @@ function RealisationsCard({ project, active = false }: { project: Project; activ
               {/* Type incrusté */}
               <div className="shrink-0 rounded-full bg-[linear-gradient(145deg,rgba(244,222,252,0.25)_0%,rgba(255,255,255,0.07)_35%,rgba(147,83,169,0.19)_100%)] p-px shadow-[0_5px_15px_rgba(18,8,23,0.13),inset_0_1px_0_rgba(255,255,255,0.05)]">
                 <div className="flex items-center justify-center rounded-full bg-[linear-gradient(180deg,rgba(92,58,105,0.76)_0%,rgba(65,39,77,0.72)_100%)] px-[min(clamp(.5rem,.64vw,.62rem),2.55cqw)] py-[min(clamp(.24rem,.3vw,.28rem),1.19cqw)] shadow-[inset_0_1px_0_rgba(255,255,255,0.07),inset_0_-1px_0_rgba(13,7,17,0.18)]">
-                  <span className="font-main text-[min(clamp(.47rem,.52vw,.52rem),2.31cqw)] font-semibold uppercase tracking-[0.11em] text-[#f0e7f3]/[0.70]">{project.type}</span>
+                  <span className="text-[min(clamp(.47rem,.52vw,.52rem),2.31cqw)] font-semibold uppercase tracking-[0.11em] text-[#f0e7f3]/[0.70]">{project.type}</span>
                 </div>
               </div>
             </header>
@@ -348,12 +348,12 @@ function RealisationsCard({ project, active = false }: { project: Project; activ
               <div className="relative w-fit pb-[min(clamp(.58rem,.72vw,.68rem),2.85cqw)]">
                 <div className="flex items-center gap-[min(clamp(.65rem,.8vw,.78rem),3.21cqw)]">
                   <span className="h-[9px] w-[9px] shrink-0 rotate-45 bg-[linear-gradient(135deg,#f1d6fb_0%,#bd7ad4_45%,#7a3d91_100%)] shadow-[0_0_13px_rgba(199,122,224,0.35)]" />
-                  <h3 className="font-main text-[min(clamp(1.72rem,2.05vw,1.95rem),8.42cqw)] font-bold leading-none tracking-[-0.04em] text-[#fbf7fc]">{project.title}</h3>
+                  <h3 className="text-[min(clamp(1.72rem,2.05vw,1.95rem),8.42cqw)] font-bold leading-none tracking-[-0.04em] text-[#fbf7fc]">{project.title}</h3>
                 </div>
                 <div aria-hidden="true" className="absolute bottom-0 left-[4px] top-[calc(.5*min(clamp(1.72rem,2.05vw,1.95rem),8.42cqw)+7px)] w-px bg-[linear-gradient(180deg,rgba(183,103,207,0.4)_0%,rgba(203,137,223,0.4)_48%,rgba(229,184,244,0.2)_100%)] shadow-[0_0_6px_rgba(187,110,210,0.12)]" />
                 <div aria-hidden="true" className="absolute bottom-0 left-[4px] -right-[clamp(4px,.35vw,7px)] h-px bg-[linear-gradient(90deg,rgba(229,184,244,0.2)_0%,rgba(183,103,207,0.4)_37%,rgba(240,218,248,0.4)_100%)] shadow-[0_0_8px_rgba(187,110,210,0.10)]" />
               </div>
-              <p className="mt-[min(clamp(1rem,1.5vw,1.5rem),5cqw)] max-w-[95%] font-main text-[min(clamp(.78rem,.88vw,.88rem),3.83cqw)] font-normal leading-[1.55] text-[#e8dfe9]/[0.61]">{project.shortDescription}</p>
+              <p className="mt-[min(clamp(1rem,1.5vw,1.5rem),5cqw)] max-w-[95%] text-[min(clamp(.78rem,.88vw,.88rem),3.83cqw)] font-normal leading-[1.55] text-[#e8dfe9]/[0.61]">{project.shortDescription}</p>
             </div>
           </div>
           {/* Coin métallique replié */}

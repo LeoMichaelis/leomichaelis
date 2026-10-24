@@ -23,7 +23,6 @@ export const heroContent = {
     services: "Découvrir mes services",
     realizations: "Voir mes réalisations",
   },
-  baseline: ["Concevoir", "Développer", "Automatiser", "Faire évoluer"],
   keywords: {
     data: "DATA",
     product: "PRODUCT",
